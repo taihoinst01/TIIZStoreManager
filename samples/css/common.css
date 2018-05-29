@@ -1,0 +1,287 @@
+/* reset */
+body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,label,input,select,textarea,button {margin:0; padding:0;}
+body,h1,h2,h3,h4,h5,h6 {font-size:12px; font-family:"nanumgothic",sans-serif;}
+a {text-decoration:none; color:#333;}
+ul,ol,li {list-style:none;}
+img,fieldset {border:none;vertical-align:middle;}
+strong,em,address {font-weight:normal; font-style:normal;}
+table {border-collapse:collapse;}
+/*font*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+@import url(//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+/*common*/
+#bg{
+    background-image: url(../img/bg.png);
+    clear: both;
+  
+}
+.ml30{margin-left: 30px}
+.fr {float: right;}
+.cb {clear: both;}
+.leftSideBar{
+    background:#292c33;
+    width:270px;
+    height:1080px;
+    
+    position: absolute;
+    top:0px;
+    left:-200px;
+    z-index: 999;
+    transition: All 0.2s ease; -webkit-transition: All 0.2s ease; -moz-transition: All 0.2s ease; -o-transition: All 0.2s ease;
+    
+}
+.toggleMenu{float: right;height: 70px;width: 70px}
+.toggleMenu .menu {border-bottom:0px}
+.textInclude li.active {
+    border-left: 5px solid #359bfd
+}
+.onlyIcon li.active{background-color: #359bfd}
+
+.open {
+    left:0px;
+  }
+.textInclude {
+    display: none;
+}
+.onlyIcon .menu{
+    border-bottom:1px solid #6a6c71;
+    height: 70px;
+    width: 70px;
+}
+/*--------------menu_f 클래스-------------*/
+.textInclude .menu{
+    padding: 20px 20px;
+    border-bottom: 1px solid #6a6c71;
+    
+}
+.liSpan{
+    margin-left: 15px;
+    color: white;
+    font-size: 18px;
+    vertical-align: middle
+}
+
+.icon{
+    padding-left: 23px;
+    padding-top: 28px;
+}
+.all{
+    width:500px;
+    height: 1080px;
+    background:#edeff5;
+    
+}
+
+.close{
+    margin-left:470px;
+    padding-top: 10px;
+}
+.layerPopup {
+    position: absolute;
+    z-index: 999;
+    left: 70px;
+    display: none;
+    transition: All 0.2s ease;
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    background-color: #edeff5;
+}
+.layerPopup_open {
+    position: absolute;
+    z-index: 999;
+    left: 270px;
+    transition: All 0.2s ease;
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+}
+.menu1_02.layerPopup_sub01 {
+    position: absolute;
+    z-index: 999;
+    left: 550px;
+    display: none;
+    transition: All 0.2s ease;
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    background-color: white;
+}
+.menu1_02.layerPopup_sub01_open {
+    position: absolute;
+    z-index: 999;
+    left: 750px;
+    transition: All 0.2s ease;
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+}
+.menu1_01 {
+    width: 480px; height: 900px; 
+  }
+.menu1_02 {
+    width: 344px;
+    height: 438px;  
+}
+.menu2_01{
+    width: 550px;
+    height: 600px; 
+}
+.menu2_02.layerPopup_sub01 {
+    position: absolute;
+    z-index: 999;
+    left: 620px;
+    display: none;
+    transition: All 0.2s ease;
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    background-color: white;
+}
+.menu2_02.layerPopup_sub01_open {
+    position: absolute;
+    z-index: 999;
+    left: 820px;
+    transition: All 0.2s ease;
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+}
+.menu2_02{
+    width: 344px;
+    height: 438px;
+}
+
+.popupHeader, .popupContent{
+    margin-left: 30px;
+}
+.subPopupHeader, .subPopupContent{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.visitantInfoTbl{
+    width: 300px;
+    height: 355px;
+}
+.visitantInfoTbl td{
+    text-align: center;
+    font-family:'NanumGothic';
+    font-size: 14px;
+}
+.visitantInfoTbl td{
+    border: 1px solid gray
+}
+.visitantInfoTbl thead tr{
+    background-color: #edeff5;
+}
+.visitantInfoTbl tr td:first{
+    color: black
+}
+.visitantInfoTbl tr td:nth-child(2){
+    color: #636466
+}
+.employeeTbl {
+    margin-top: 15px;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    font-family:'NanumGothic';
+    font-size: 14px;
+    background-color: white;
+}
+.employeeTbl td,th{
+    border: 1px solid gray
+}
+.employeeTbl thead tr{
+    
+}
+input[type=text]{
+    width:150px;
+    height: 35px;
+    border:1px solid #9ca3aa;
+    border-radius: 5px;
+  
+    
+}
+input[type=date]{
+    width:150px;
+    height: 35px;
+    border:1px solid #9ca3aa;
+    border-radius: 5px;
+  
+    
+}
+select{
+    width:50px;
+    height: 35px;
+    border: 1px solid #9ca3aa;
+    border-radius:5px;
+}
+label{
+      color:#4d5465;
+    font-size: 16px;
+}
+
+.title{
+    font-family:'nanumsquare';
+    font-size: 22px;
+    color: #515255;
+    border-bottom: 3px solid #359bfd;
+}
+.popupCloseBtn {
+    margin-right: 15px;
+    margin-top: 15px;
+    float: right;
+}
+.popupHeader {
+    margin-top: 35px;
+}
+.popupContent{
+    margin-top: 25px;
+}
+.box{
+    width:436px;
+    height: 155px;
+    background: white;
+    border-radius: 5px;
+    margin-bottom:15px;
+}
+.man{
+    padding-left: 30px;
+    margin-top: 26px;
+    float: left;
+    margin-right: 20px;
+}
+.txt{
+    color:#359bfd;
+    font-family: 'nanumsqure';
+    font-size: 18px;
+    display: block;
+    padding-top: 30px;
+  
+}
+
+.ttxt{
+    color:#868686;
+    font-size: 14px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.all_sub{
+    width:344px;
+    height: 438px;
+    background: white;
+   
+}
+
+
+
+
+
+
+
